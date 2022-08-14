@@ -1,0 +1,248 @@
+.footer {
+	padding: 64px 0 22px 0;
+	background-color: #03115F;
+	// .footer__container
+	&__container {
+	}
+	
+	// .footer__row	
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0px 0px 72px 0px;
+		@media (max-width: 767.98px) {
+			margin: 0px 0px 30px 0px;
+		}
+	}
+
+	// .footer__column
+	&__column {
+		flex: 0 1 25%;
+		margin: 0px 0px 40px 0px;
+		
+		&:last-child {
+			flex: 0 1 50%;
+			display: flex;
+			margin: 0px 0px 0px 0px;
+		}
+		@media (max-width: 991.98px) {
+			flex: 0 1 50%;
+			&:last-child {
+				flex: 1 1 100%;
+				display: block;
+				text-align: center;
+			}
+		}
+		
+	}
+
+	// .footer__contacts
+	&__contacts {
+	}
+
+	// .footer__items 
+	&__items {
+		margin: 0px 0px 24px 0px;
+		flex: 0 1 33.333%;
+		@media (max-width: 767.98px) {
+			&:nth-child(3) {
+				display: none;
+			}
+		}
+	}
+
+	// .footer__menu
+	&__menu {
+		
+	}
+
+	// .footer__body
+	&__body {
+	}
+
+	// .footer__list
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	// .footer__item
+	&__item {
+		margin: 0px 0px 16px 0px;
+		&:last-child {
+			margin: 0;
+		}
+	}
+
+
+	// .footer__link
+	&__link {
+		font-weight: 325;
+		font-size: 16px;
+		line-height: calc(19px/16px * 100%);
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		color: #E0E1E3;
+		@media (max-width: 767.98px) {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 150%;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			color: #FFFFFF;
+		}
+		
+	}
+
+	// .footer__social
+	&__social {
+	}
+	// .footer__copy
+	&__copy {
+		display: flex;
+		@media (max-width: 767.98px) {
+			flex-direction: column-reverse;
+			
+			align-items: center;
+		}
+	}
+
+	// .footer__developer
+	&__developer {
+		flex: 0 1 50%;
+		font-size: 16px;
+		line-height: 125%;
+		color: #F0F0F1;
+		@media (max-width: 767.98px) {
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 133%;
+			color: #EEEFF1;
+		}
+	}
+
+	// .footer__privacy
+	&__privacy {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 114%;
+		color: #E0E1E3;
+		position: relative;
+		margin: 0px 16px 0px 0px;
+		text-decoration: underline;
+		&::after {
+			content: "";
+			width: 15px;
+			height: 2px;
+			background-color: #A3A4AB;
+			transform: rotate(90deg);
+			position: absolute;
+			top: 7.75px;
+			right: -24px;
+			@media (max-width: 767.98px) {
+				display: none;
+			}
+		}
+		@media (max-width: 767.98px) {
+			margin: 0px 0px 24px 0px;
+		}
+	}
+
+	// .footer__cookies
+	&__cookies {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 114%;
+		color: #E0E1E3;
+		margin: 0px 0px 0px 16px;
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+	}
+}
+
+.contacts-footer {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	// .contacts-footer__title
+	&__title {
+		margin: 0px 0px 16px 0px;
+		font-family: 'GothamBold';
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 150%;
+		text-transform: uppercase;
+		color: #F0F0F1;
+		letter-spacing: 0.02em;
+		@media (max-width: 767.98px) {
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 117%;
+			letter-spacing: 0.02em;
+			text-transform: uppercase;
+			color: #EEEFF1;
+		}
+		@media (max-width: 479.98px) {
+			
+		}
+	}
+
+	// .contacts-footer__email
+	&__email {
+		margin: 0px 0px 4px 0px;
+		font-size: 16px;
+		line-height: 138%;
+		color: #F0F0F1;
+		@media (max-width: 767.98px) {
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 400;
+			font-size: calc(10.5px + (12 - 10.5) * ((100vw - 320px) / (767.98 - 320)));
+			line-height: 133%;
+			color: #EEEFF1;
+		}
+	}
+
+	// .contacts-footer__phone
+	&__phone {
+		margin: 0px 0px 16px 0px;
+		font-size: 16px;
+		line-height: 138%;
+		color: #F0F0F1;
+		@media (max-width: 767.98px) {
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 133%;
+			color: #EEEFF1;
+		}
+	}
+
+	// .contacts-footer__address
+	&__address {
+		font-size: 16px;
+		line-height: 138%;
+		color: #F0F0F1;
+		@media (max-width: 767.98px) {
+			font-family: 'Rubik';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 133%;
+			color: #EEEFF1;
+		}
+	}
+}
+
+
+
+
+
