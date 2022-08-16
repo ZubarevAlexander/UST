@@ -178,10 +178,7 @@
 .text {
 	font-weight: 325;
 	font-size: 18px;
-	@media (max-width: 1470px) {
-			font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1470 - 320)));
-	}
-	line-height: calc(22px/18px * 100%);
+	line-height: 122%;
 	color: #535670;
 }
 
