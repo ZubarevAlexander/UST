@@ -7,7 +7,7 @@
 	&__row {
 		background-color: #EEEFF1;
 		display: flex;
-		
+		padding: 110px 122px 110px 122px;
 		@media (max-width: 767.98px) {
 			flex-direction: column-reverse;
 			background-color: #E6E8EF;
@@ -18,12 +18,12 @@
 	&__column {
 		flex: 0 1 50%;
 		
-		padding: 110px 42px 110px 0px;
+		
 		&:first-child {
-			padding-left: 122px;
+		
 		}
 		&:last-child {
-			padding-right: 122px;
+			
 		}
 	}
 
