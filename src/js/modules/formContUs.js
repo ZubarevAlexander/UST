@@ -2,7 +2,7 @@
 export function validateFromContUs() {
 	document.addEventListener("DOMContentLoaded", function () {
 		//Перехватим отправку формы при нажатии по кнопке
-		const form = this.getElementById("form");
+		const form = this.getElementById("formContUs");
 		//Вешаем событие
 		form.addEventListener("submit", formSend);
 
@@ -41,7 +41,7 @@ export function validateFromContUs() {
 			}
 		}
 
-		let formItem = document.querySelectorAll(".form-contact-us__input");
+		let formItem = document.querySelectorAll(".form__input");
 
 		document.documentElement.addEventListener("click", function (e) {
 			for (let i of formItem) {
