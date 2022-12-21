@@ -16,7 +16,7 @@
 	accVac.forEach((accVacLabel) => {
 		accVacLabel.addEventListener("click", () => {
 			const height = accVacLabel.nextElementSibling.scrollHeight;
-			console.log(height);
+			
 			accVacLabel.classList.toggle("active");
 
 			if (accVacLabel.classList.contains("active")) {

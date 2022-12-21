@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 	<title>Главная</title>
 
 </head>
@@ -47,24 +48,32 @@
 					<li class="menu__item"><a href="career.html" class="menu__link">Карьера</a></li>
 					<li class="menu__item"><a href="#portfolio" class="menu__link">Портфолио</a></li>
 					<li class="menu__item"><a href="#contact" class="menu__link">Контакты</a></li>
-					<!--<li class="menu__item"><a href="#contact" class="menu__link region"><img src="img/header/flag.svg"
-								alt=""></a></li>
-					<li class="menu__item"><a href="#contact" class="menu__link search"><img src="img/header/search.svg"
-								alt=""></a></li>-->
 				</ul>
 			</nav>
 		</div>
-		
 		<div class="header__actions actions-header">
 			<a href="#" class="actions-header__region"><img src="img/header/flag.svg"
-								alt=""></a></li>
-			<a href="#" class="actions-header__search"><img src="img/header/search.svg"
-								alt=""></a></li>
+								alt=""></a>
+			<!--<div type="text" name="search" id="search"href="#" class="actions-header__search"><img src="img/header/search.svg"
+								alt=""></div>-->
+								
+			<!--<div class="actions-header__seacrh search">
+				<div class="search__input">
+					<input type="text" placeholder="Search" id="search">
+				</div>
+				<a href="#" class="search__icon"></a>
+				<div class="search__clear"></div>
+			</div>-->
+			<div class="actions-header__seacrh search">
+				<button type="submit" class="search__icon"><img src="img/header/search.svg"
+					alt=""></button>
+			</div>
 		</div>
 	
 	</div>
 </header>
 		<main class="page">
+			<button class="page__scrollTop scrollTop"></button>
 			<div class="page__main-block main-block">
 				<div class="main-block__container container">
 					<div class="main-block__body">
@@ -138,7 +147,7 @@
 						</div>
 						<div class="about__buttons ">
 							<a href="" class="about__button btn w">Вакансии</a>
-							<a href="" class="about__button btn">Читать далее</a>
+							<a href="" class="about__button btn b">Читать далее</a>
 							<a href="" class="about__readnext">Читать далее</a>
 						</div>
 					</div>
@@ -497,7 +506,7 @@
 								</div>
 								<div class="form__item">
 									<div class="form__btn">
-										<button type="submit" class="form__button btn">Отправить</button>
+										<button type="submit" class="form__button btn b">Отправить</button>
 									</div>
 								</div>
 							</form>

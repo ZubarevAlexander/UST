@@ -95,16 +95,37 @@ window.onload = () => {
 	uploadBtn.addEventListener("click", () => {
 		uploadFile.click();
 	});
-/*
-	uploadFile.addEventListener("change", () => {
-		if(uploadFile.value) {
-			uploadText.innerText = uploadFile.value.match(/[\/\\]([\w\d\s\.\-(\)]+)$/[1]);
-		} else {
-			uploadText.innerText = "Файл не выбран";
-		}
-	});
-	*/
+	/*
+		uploadFile.addEventListener("change", () => {
+			if(uploadFile.value) {
+				uploadText.innerText = uploadFile.value.match(/[\/\\]([\w\d\s\.\-(\)]+)$/[1]);
+			} else {
+				uploadText.innerText = "Файл не выбран";
+			}
+		});
+		*/
 }
+
+//=============================================================================================================
+window.addEventListener("scroll", () => {
+	let btnScrollTop = document.querySelector(".scrollTop");
+	btnScrollTop.classList.toggle("active", window.scrollY > 500)
+	btnScrollTop.addEventListener("click", () => {
+		document.documentElement.scrollTop = 0;
+	});
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 //=============================================================================================================
 // Форма на странице карьера
@@ -160,4 +181,20 @@ validate
 
 ibg();
 */
+//=============================================================================================================
+/*
+const search = document.querySelector(".search");
+const searchIcon = document.querySelector(".search__icon");
+const searchClear = document.querySelector(".search__clear");
+const searchInput = document.getElementById("search");
+
+searchIcon.addEventListener("click", () => {
+	search.classList.toggle("active");
+});
+
+searchClear.addEventListener("click", () => {
+	searchInput.value = " ";
+});
+*/
+//=============================================================================================================
 
