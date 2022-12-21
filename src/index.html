@@ -19,6 +19,7 @@
 	<div class="wrapper">
 		@@include('html/header.html',{})
 		<main class="page">
+			<button class="page__scrollTop scrollTop"></button>
 			<div class="page__main-block main-block">
 				<div class="main-block__container container">
 					<div class="main-block__body">
@@ -92,7 +93,7 @@
 						</div>
 						<div class="about__buttons ">
 							<a href="" class="about__button btn w">Вакансии</a>
-							<a href="" class="about__button btn">Читать далее</a>
+							<a href="" class="about__button btn b">Читать далее</a>
 							<a href="" class="about__readnext">Читать далее</a>
 						</div>
 					</div>
@@ -415,7 +416,8 @@
 							</div>
 						</div>
 						<div class="form-contact__column">
-							<form class="form-contact__form form" action="#" method="POST" enctype="multipart/form-data">
+							<form id="formContUs" class="form-contact__form form" action="#" method="POST"
+								enctype="multipart/form-data">
 								<div class="form__title">Связаться с нами</div>
 								<div class="form__text text">Оставьте свою контактную информацию, и мы с радостью
 									свяжемся с
@@ -433,8 +435,11 @@
 									<input id="telUser" class="form__input input-tel _req" type="tel" placeholder=" ">
 									<label for="telUser" class="placeholder">Телефон</label>
 								</div>
-								<textarea class="form__input" name="message" id="messageUser" placeholder=""></textarea>
-								<label for="messageUser" class="placeholder" placeholder=" ">Сообщение</label>
+								<div class="form__item">
+									<textarea class="form__input" name="message" id="messageUser" placeholder=""></textarea>
+									<label for="messageUser" class="placeholder" placeholder=" ">Сообщение</label>
+								</div>
+
 								<div class="form__item">
 									<label class="form__label privacy">
 										Ваши персональные данные обрабатываются в соответствии с нашей <a href="#">Политикой
@@ -447,7 +452,7 @@
 								</div>
 								<div class="form__item">
 									<div class="form__btn">
-										<button type="submit" class="form__button btn">Отправить</button>
+										<button type="submit" class="form__button btn b">Отправить</button>
 									</div>
 								</div>
 							</form>
