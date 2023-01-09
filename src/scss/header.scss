@@ -72,12 +72,10 @@
 	flex: 1 1 auto;
 	display: flex;
 	justify-content: flex-end;
-	@media(max-width: 1200.98px) {
-		
-	}
+	
 	// .menu__body
 	&__body {
-		@media (max-width: 1200.98px) {	
+		@media (max-width: 1199.98px) {	
 			position: fixed;
 			background-color: rgba(3, 17, 95, 0.95);
 			width: 100%;
@@ -116,10 +114,10 @@
 		display: flex;
 		justify-content: flex-end;
 		flex-wrap: wrap;
-		@media (max-width: 1200.98px) {
+		@media (max-width: 1199.98px) {
 			
 		}
-		@media (max-width: 1200.98px) {
+		@media (max-width: 1199.98px) {
 			display: block;
 			text-align: center;
 			justify-content: center;
@@ -157,13 +155,10 @@
 		@media (max-width: 991.98px) {
 			font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (992 - 320)));
 		}
-		@media (min-width: 991.98px) {
-			&:hover {
-				text-decoration: underline;
-			}
-		}
-		@media (max-width: 1200.98px) {
+	
+		@media (max-width: 1199.98px) {
 			font-size: 24px;
+			display: inline-block;
 		}
 	}
 }
@@ -174,7 +169,7 @@
 	align-items: center;
 	justify-content: flex-end;
 	@media (max-width: 1200.98px) {
-		
+		display: none;
 	}
 	@media (max-width: 991.98px) {
 		display: none;
@@ -206,7 +201,7 @@
 
 .icon-menu {
 	display: none;
-	@media (max-width: 1200.98px) {
+	@media (max-width: 1199.98px) {
 		display: block;
 		position: absolute; // поменяли на relative/absolute;
 		//top: 41px; // с 18 на 0
