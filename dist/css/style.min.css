@@ -613,6 +613,7 @@ h6 {
   margin: 0;
 }
 .footer__link {
+  display: inline-block;
   font-weight: 325;
   font-size: 16px;
   line-height: 118.75%;
@@ -1136,7 +1137,7 @@ h6 {
 }
 
 ._error {
-  box-shadow: 0 0 15px red;
+  box-shadow: 0 0 5px red;
 }
 
 /* ФОРМА-КАРЬЕРА */
@@ -2002,20 +2003,37 @@ body._lock {
 .works-slider-1 {
   margin: 0px 0px 40px 0px;
 }
-.works-slider-1__image {
+.project {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
+  max-width: 100%;
+  justify-content: center;
+}
+.project:hover {
+  background-color: rgba(117, 120, 141, 0.1);
+  transition: 1s;
+}
+.project__image {
+  overflow: hidden;
 }
 @media (max-width: 767.98px) {
-  .works-slider-1__image {
+  .project__image {
     text-align: center;
   }
 }
-.works-slider-1__image img {
+.project__image img {
+  z-index: 1;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
-.works-slider-1__title {
+.project__image img:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+}
+.project__title {
+  z-index: 6;
   margin: 4px 0px 4px 0px;
   font-weight: 700;
   font-size: 22px;
@@ -2024,15 +2042,15 @@ body._lock {
   font-size: calc(18px + 4 * ((100vw - 320px) / 1600));
 }
 @media (max-width: 767.98px) {
-  .works-slider-1__title {
+  .project__title {
     text-align: center;
   }
 }
-.works-slider-1__text {
+.project__text {
   max-height: 100px;
 }
 @media (max-width: 767.98px) {
-  .works-slider-1__text {
+  .project__text {
     font-family: "Rubik";
     font-weight: 400;
     color: #75788D;

@@ -52,7 +52,7 @@ const myImageSlider = new Swiper(".works-slider-1", {
 		},
 		
 		// Включение/отключение перетаскивания на ПК
-		simulateTouch: true,
+		simulateTouch: false,
 		// Чувствительность свайпа: 1 - по умолчанию, значение 0 - отключит свайп/перетакс на всех устровйствах
 		touchRatio: 1,
 		// Угол срабатывания свайпа/перетаскивания
@@ -340,7 +340,7 @@ const myBigImageSlider = new Swiper('.works-slider-2', {
 		// Угол срабатывания свайпа/перетаскивания
 		touchAngle: 45,
 		// Курсор перетаскивания
-		grabCursor: true,
+		grabCursor: false,
 
 		// Перетаскивание при клике на слайд
 		slideToClickedSlide: false,
@@ -532,12 +532,12 @@ let sliderBlock1 = document.querySelector('.works-slider-1');
 
 // myImageSlider - это переменная которой присвоен слайдер
 
-sliderBlock1.addEventListener("mouseenter", function(e){
+sliderBlock1.addEventListener("mouseleave", function(e){
 	myImageSlider.params.autoplay.disableOnInteraction = false;
 	myImageSlider.params.autoplay.delay = 1000;
 	myImageSlider.autoplay.start();
 });
-sliderBlock1.addEventListener("mouseleave", function(e){
+sliderBlock1.addEventListener("mouseenter", function(e){
 	myImageSlider.autoplay.stop();
 });
 
@@ -546,12 +546,12 @@ let sliderBlock2 = document.querySelector('.works-slider-2');
 
 // myImageSlider - это переменная которой присвоен слайдер
 
-sliderBlock2.addEventListener("mouseenter", function(e){
+sliderBlock2.addEventListener("mouseleave", function(e){
 	myBigImageSlider.params.autoplay.disableOnInteraction = false;
 	myBigImageSlider.params.autoplay.delay = 1000;
 	myBigImageSlider.autoplay.start();
 });
-sliderBlock2.addEventListener("mouseleave", function(e){
+sliderBlock2.addEventListener("mouseenter", function(e){
 	myBigImageSlider.autoplay.stop();
 });
 
